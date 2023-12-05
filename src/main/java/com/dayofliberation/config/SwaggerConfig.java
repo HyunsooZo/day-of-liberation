@@ -25,7 +25,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.travelsphere"))
+                .apis(RequestHandlerSelectors.basePackage("com.dayofliberation"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
@@ -38,8 +38,8 @@ public class SwaggerConfig implements WebMvcConfigurer {
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("TRAVEL-SPHERE REST API")
-                .description("Spring boot를 이용한 여행 도우미 앱 REST API")
+                .title("Day_Of_Liberation REST API")
+                .description("Spring boot를 이용한 대출관리 앱 REST API")
                 .version("0.0.1")
                 .contact(new Contact("조현수",
                         "https://github.com/HyunsooZo",
