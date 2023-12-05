@@ -6,6 +6,7 @@ import com.dayofliberation.dto.UserUUIDDto;
 import com.dayofliberation.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
 @Service
@@ -18,6 +19,7 @@ public class UserService {
      * @param userUUIDDto 사용자 UUID DTO
      * @return UserDto
      */
+    @Transactional
     public UserDto getUserInfo(UserUUIDDto userUUIDDto) {
 
         User user = userRepository.findByUUID(userUUIDDto.getUserUUID())
