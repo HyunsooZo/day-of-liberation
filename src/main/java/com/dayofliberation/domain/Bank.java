@@ -14,7 +14,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Bank extends BaseEntity {
+public class Bank {
 
     @Id
     private Long id;

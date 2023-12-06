@@ -21,7 +21,10 @@ public enum ErrorCode {
     USER_STATUS_NOT_ACTIVE(BAD_REQUEST, "사용자 상태가 활성화되어 있지 않습니다."),
 
     //bank
-    BANK_NOT_FOUND(NOT_FOUND, "존재하지 않는 은행입니다.");
+    BANK_NOT_FOUND(NOT_FOUND, "존재하지 않는 은행입니다."),
+
+    //loan
+    LOAN_NOT_FOUND(NOT_FOUND,"존재하지 않는 대출입니다.");
 
     private final HttpStatus status;
     private final String message;

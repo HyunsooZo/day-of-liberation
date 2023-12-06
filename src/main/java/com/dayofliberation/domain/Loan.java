@@ -20,7 +20,7 @@ public class Loan extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     private Bank bank;
 
     @ManyToOne(fetch = FetchType.LAZY)
